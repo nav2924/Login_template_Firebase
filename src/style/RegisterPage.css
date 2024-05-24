@@ -1,0 +1,74 @@
+/* Overall container */
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: #f5f5f5;
+  }
+  
+  /* Logo container */
+  .logo-container {
+    margin-bottom: 1rem;
+    text-align: center;
+  }
+  
+  .dental-hifi-logo {
+    max-width: 200px;
+    height: auto;
+    mix-blend-mode: multiply;
+  }
+  
+  /* Registration form box */
+  .register-box {
+    background-color: #ffffff;
+    padding: 20px; /* Adjust padding for better spacing */
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+  }
+  
+  /* Input fields container */
+  .input-container {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    margin-bottom: 1rem;
+  }
+  
+  .input-container input {
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Error message styling */
+  .text-red-600 {
+    color: red;
+    margin-bottom: 1rem;
+  }
+  
+  /* Register button */
+  .register-btn {
+    background-color: #4285f4;
+    color: #ffffff;
+    padding: 10px 20px; /* Adjust padding for better button size */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 1rem;
+  }
+  
+  /* Link to login page */
+  .gap-y-3 a {
+    color: #4285f4; /* Match link color to button */
+    text-decoration: none;
+  }
+  
+  /* Remove any social login styles (assuming not used) */
+  /* .social-login, .google-btn, .apple-btn, .google-logo, .apple-logo, .or */
+  

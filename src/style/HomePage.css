@@ -1,0 +1,60 @@
+.homepage {
+    font-family: Arial, sans-serif;
+    color: #333;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .header {
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .welcome, .solutions, .why-choose-us, .latest-news, .contact, .footer {
+    margin: 20px 0;
+  }
+  
+  h2 {
+    color: #4CAF50;
+  }
+  
+  .solutions .solution {
+    margin: 10px 0;
+  }
+  
+  .why-choose-us ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .why-choose-us li {
+    margin: 10px 0;
+  }
+  
+  .latest-news .news-item {
+    margin: 10px 0;
+  }
+  
+  .contact p, .footer p {
+    margin: 5px 0;
+  }
+  
+  .footer {
+    text-align: center;
+    background-color: #f1f1f1;
+    padding: 20px 0;
+  }
+  
+  .footer .social-media a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #4CAF50;
+  }
+  
+  .footer .social-media a:hover {
+    text-decoration: underline;
+  }
+  
