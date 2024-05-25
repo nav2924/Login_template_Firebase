@@ -86,10 +86,7 @@ function Login() {
             <img className="google-logo" src="/google.jpg" alt="Google" />
             Log in with Google
           </button>
-          <button className="apple-btn">
-            <img className="apple-logo" src="/apple.jpg" alt="Apple" />
-            Log in with Apple
-          </button>
+          
         </div>
         <div className="or">or</div>
         <div className="input-container">
@@ -125,7 +122,7 @@ function Login() {
         <div className="gap-y-3">
           {" "}
           <Link to="/register" className="ms-2">
-            Create an Account
+            Create an Account/SignUp
           </Link>
         </div>
       </div>
@@ -135,8 +132,4 @@ function Login() {
 
 export default Login;
 
-<<<<<<< HEAD
 // https://dentalhifi-949ea.firebaseapp.com/__/auth/handler
-=======
-// https://dentalhifi-949ea.firebaseapp.com/__/auth/handler
->>>>>>> 837a7230520d69140d6307b9a79433cc7ab7579c
