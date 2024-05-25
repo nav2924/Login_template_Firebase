@@ -135,4 +135,8 @@ function Login() {
 
 export default Login;
 
+<<<<<<< HEAD
 // https://dentalhifi-949ea.firebaseapp.com/__/auth/handler
+=======
+// https://dentalhifi-949ea.firebaseapp.com/__/auth/handler
+>>>>>>> 837a7230520d69140d6307b9a79433cc7ab7579c
