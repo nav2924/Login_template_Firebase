@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
@@ -10,3 +11,7 @@ Currently, two official plugins are available:
 =======
 # Dental_hifi
 >>>>>>> dddef9f65a2fc2872af37b50ad0362ac30ec864a
+=======
+# Login_template_Firebase
+This repo contains User Login and signup both with email and sign in with google with Forget Password
+>>>>>>> bd24c551608efc6fef68567c84e8489699103326
