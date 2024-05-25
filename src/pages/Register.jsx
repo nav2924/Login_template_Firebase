@@ -25,13 +25,11 @@ function Register() {
       userCredentials.password
     )
       .then(() => {
-        // Navigate to home page after successful registration
         navigate("/");
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
-        // Handle errors
         setError(errorMessage);
       });
   };
@@ -47,16 +45,7 @@ function Register() {
       </div>
       <div className="register-box">
         <h2>Register</h2>
-        <div className="social-login">
-          <button className="google-btn">
-            <img className="google-logo" src="/google.jpg" alt="Google" />
-            Log in with Google
-          </button>
-          <button className="apple-btn">
-            <img className="apple-logo" src="/apple.jpg" alt="Apple" />
-            Log in with Apple
-          </button>
-        </div>
+
         <div className="input-container">
           <input
             type="text"
