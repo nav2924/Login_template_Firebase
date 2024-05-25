@@ -6,6 +6,8 @@ import {
   sendPasswordResetEmail,
   signInWithEmailAndPassword,
   onAuthStateChanged,
+  signInWithPopup,
+  GoogleAuthProvider,
 } from "firebase/auth";
 import { useDispatch } from "react-redux";
 import { setUser } from "../store/usersSlice.js";
@@ -15,10 +17,10 @@ function Login() {
   const [userCredentials, setUserCredentials] = useState({});
   const [error, setError] = useState("");
   const navigate = useNavigate();
-
-  // console.log(auth);
+  const provider = new GoogleAuthProvider();
 
   onAuthStateChanged(auth, (user) => {
+    console.log("Auth state changed, user:", user);
     if (user) {
       dispatch(setUser({ id: user.uid, email: user.email }));
     } else {
@@ -41,7 +43,6 @@ function Login() {
       userCredentials.password
     )
       .then(() => {
-        // Navigate to home page after successful login
         navigate("/home");
       })
       .catch((error) => {
@@ -50,6 +51,18 @@ function Login() {
         // Handle error
       });
   };
+
+  function handleLoginGoogle() {
+    signInWithPopup(auth, provider)
+      .then((result) => {
+        const user = result.user;
+        console.log("Google sign-in user:", user);
+        dispatch(setUser({ id: user.uid, email: user.email }));
+      })
+      .catch((error) => {
+        console.error("Error signing in with Google:", error);
+      });
+  }
 
   function handlePasswordReset() {
     const email = prompt("Enter your Email");
@@ -69,7 +82,7 @@ function Login() {
       <div className="login-box">
         <h2>Log in</h2>
         <div className="social-login">
-          <button className="google-btn">
+          <button className="google-btn" onClick={handleLoginGoogle}>
             <img className="google-logo" src="/google.jpg" alt="Google" />
             Log in with Google
           </button>
@@ -121,3 +134,5 @@ function Login() {
 }
 
 export default Login;
+
+// https://dentalhifi-949ea.firebaseapp.com/__/auth/handler
