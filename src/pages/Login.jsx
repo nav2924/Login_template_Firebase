@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+koimport React, { useState } from "react";
 import "../style/LoginPage.css";
 import { auth } from "../firebase/config.js";
 import { Link, useNavigate } from "react-router-dom";
@@ -132,4 +132,3 @@ function Login() {
 
 export default Login;
 
-// https://dentalhifi-949ea.firebaseapp.com/__/auth/handler
